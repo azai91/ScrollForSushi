@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39DF60351A21D996004DF2C0 /* stackoverflow_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39DF60341A21D996004DF2C0 /* stackoverflow_logo.jpg */; };
 		39EC457A1A21BB4F0065EBFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC45791A21BB4F0065EBFD /* AppDelegate.swift */; };
 		39EC457C1A21BB4F0065EBFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC457B1A21BB4F0065EBFD /* ViewController.swift */; };
 		39EC457F1A21BB4F0065EBFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39EC457D1A21BB4F0065EBFD /* Main.storyboard */; };
 		39EC45811A21BB4F0065EBFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39EC45801A21BB4F0065EBFD /* Images.xcassets */; };
 		39EC45841A21BB4F0065EBFD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39EC45821A21BB4F0065EBFD /* LaunchScreen.xib */; };
 		39EC45901A21BB4F0065EBFD /* DeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC458F1A21BB4F0065EBFD /* DeliveryTests.swift */; };
+		39EC45A01A21BC2A0065EBFD /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39EC459F1A21BC2A0065EBFD /* WatchKit.framework */; };
+		39EC45A61A21BC2A0065EBFD /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC45A51A21BC2A0065EBFD /* InterfaceController.swift */; };
+		39EC45A81A21BC2A0065EBFD /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC45A71A21BC2A0065EBFD /* NotificationController.swift */; };
+		39EC45AA1A21BC2A0065EBFD /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC45A91A21BC2A0065EBFD /* GlanceController.swift */; };
+		39EC45AC1A21BC2A0065EBFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39EC45AB1A21BC2A0065EBFD /* Images.xcassets */; };
+		39EC45B01A21BC2A0065EBFD /* Delivery Watch App.app in Resources */ = {isa = PBXBuildFile; fileRef = 39EC45AF1A21BC2A0065EBFD /* Delivery Watch App.app */; };
+		39EC45B71A21BC2A0065EBFD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39EC45B61A21BC2A0065EBFD /* Interface.storyboard */; };
+		39EC45B91A21BC2A0065EBFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39EC45B81A21BC2A0065EBFD /* Images.xcassets */; };
+		39EC45BC1A21BC2A0065EBFD /* Delivery WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 39EC459D1A21BC2A0065EBFD /* Delivery WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		39EC45C81A21C60D0065EBFD /* Confirm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC45C71A21C60D0065EBFD /* Confirm.swift */; };
+		39EC45CA1A21D7500065EBFD /* icon_6996.png in Resources */ = {isa = PBXBuildFile; fileRef = 39EC45C91A21D7500065EBFD /* icon_6996.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,9 +35,38 @@
 			remoteGlobalIDString = 39EC45731A21BB4F0065EBFD;
 			remoteInfo = Delivery;
 		};
+		39EC45B11A21BC2A0065EBFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39EC456C1A21BB4F0065EBFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39EC45AE1A21BC2A0065EBFD;
+			remoteInfo = "Delivery Watch App";
+		};
+		39EC45BA1A21BC2A0065EBFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39EC456C1A21BB4F0065EBFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39EC459C1A21BC2A0065EBFD;
+			remoteInfo = "Delivery WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		39EC45C31A21BC2A0065EBFD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				39EC45BC1A21BC2A0065EBFD /* Delivery WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		39DF60341A21D996004DF2C0 /* stackoverflow_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = stackoverflow_logo.jpg; path = ../../../stackoverflow_logo.jpg; sourceTree = "<group>"; };
 		39EC45741A21BB4F0065EBFD /* Delivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Delivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39EC45781A21BB4F0065EBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39EC45791A21BB4F0065EBFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +77,21 @@
 		39EC45891A21BB4F0065EBFD /* DeliveryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliveryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39EC458E1A21BB4F0065EBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39EC458F1A21BB4F0065EBFD /* DeliveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTests.swift; sourceTree = "<group>"; };
+		39EC459D1A21BC2A0065EBFD /* Delivery WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Delivery WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39EC459F1A21BC2A0065EBFD /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		39EC45A31A21BC2A0065EBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39EC45A41A21BC2A0065EBFD /* PushNotificationPayload.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PushNotificationPayload.json; sourceTree = "<group>"; };
+		39EC45A51A21BC2A0065EBFD /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		39EC45A71A21BC2A0065EBFD /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		39EC45A91A21BC2A0065EBFD /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		39EC45AB1A21BC2A0065EBFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		39EC45AF1A21BC2A0065EBFD /* Delivery Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Delivery Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39EC45B51A21BC2A0065EBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39EC45B61A21BC2A0065EBFD /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		39EC45B81A21BC2A0065EBFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		39EC45C41A21C4D70065EBFD /* Delivery Watch App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Delivery Watch App-Bridging-Header.h"; sourceTree = "<group>"; };
+		39EC45C71A21C60D0065EBFD /* Confirm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Confirm.swift; sourceTree = "<group>"; };
+		39EC45C91A21D7500065EBFD /* icon_6996.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_6996.png; path = ../../../../Downloads/icon_6996.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +109,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		39EC459A1A21BC2A0065EBFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39EC45A01A21BC2A0065EBFD /* WatchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +125,9 @@
 			children = (
 				39EC45761A21BB4F0065EBFD /* Delivery */,
 				39EC458C1A21BB4F0065EBFD /* DeliveryTests */,
+				39EC45A11A21BC2A0065EBFD /* Delivery WatchKit Extension */,
+				39EC45B31A21BC2A0065EBFD /* Delivery Watch App */,
+				39EC459E1A21BC2A0065EBFD /* Frameworks */,
 				39EC45751A21BB4F0065EBFD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +137,8 @@
 			children = (
 				39EC45741A21BB4F0065EBFD /* Delivery.app */,
 				39EC45891A21BB4F0065EBFD /* DeliveryTests.xctest */,
+				39EC459D1A21BC2A0065EBFD /* Delivery WatchKit Extension.appex */,
+				39EC45AF1A21BC2A0065EBFD /* Delivery Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +181,57 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		39EC459E1A21BC2A0065EBFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39EC459F1A21BC2A0065EBFD /* WatchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39EC45A11A21BC2A0065EBFD /* Delivery WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				39EC45A51A21BC2A0065EBFD /* InterfaceController.swift */,
+				39EC45C91A21D7500065EBFD /* icon_6996.png */,
+				39DF60341A21D996004DF2C0 /* stackoverflow_logo.jpg */,
+				39EC45C71A21C60D0065EBFD /* Confirm.swift */,
+				39EC45A71A21BC2A0065EBFD /* NotificationController.swift */,
+				39EC45A91A21BC2A0065EBFD /* GlanceController.swift */,
+				39EC45AB1A21BC2A0065EBFD /* Images.xcassets */,
+				39EC45A21A21BC2A0065EBFD /* Supporting Files */,
+				39EC45C41A21C4D70065EBFD /* Delivery Watch App-Bridging-Header.h */,
+			);
+			path = "Delivery WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		39EC45A21A21BC2A0065EBFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39EC45A31A21BC2A0065EBFD /* Info.plist */,
+				39EC45A41A21BC2A0065EBFD /* PushNotificationPayload.json */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39EC45B31A21BC2A0065EBFD /* Delivery Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				39EC45B61A21BC2A0065EBFD /* Interface.storyboard */,
+				39EC45B81A21BC2A0065EBFD /* Images.xcassets */,
+				39EC45B41A21BC2A0065EBFD /* Supporting Files */,
+			);
+			path = "Delivery Watch App";
+			sourceTree = "<group>";
+		};
+		39EC45B41A21BC2A0065EBFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39EC45B51A21BC2A0065EBFD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +242,12 @@
 				39EC45701A21BB4F0065EBFD /* Sources */,
 				39EC45711A21BB4F0065EBFD /* Frameworks */,
 				39EC45721A21BB4F0065EBFD /* Resources */,
+				39EC45C31A21BC2A0065EBFD /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				39EC45BB1A21BC2A0065EBFD /* PBXTargetDependency */,
 			);
 			name = Delivery;
 			productName = Delivery;
@@ -150,6 +272,39 @@
 			productReference = 39EC45891A21BB4F0065EBFD /* DeliveryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		39EC459C1A21BC2A0065EBFD /* Delivery WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39EC45C01A21BC2A0065EBFD /* Build configuration list for PBXNativeTarget "Delivery WatchKit Extension" */;
+			buildPhases = (
+				39EC45991A21BC2A0065EBFD /* Sources */,
+				39EC459A1A21BC2A0065EBFD /* Frameworks */,
+				39EC459B1A21BC2A0065EBFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39EC45B21A21BC2A0065EBFD /* PBXTargetDependency */,
+			);
+			name = "Delivery WatchKit Extension";
+			productName = "Delivery WatchKit Extension";
+			productReference = 39EC459D1A21BC2A0065EBFD /* Delivery WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		39EC45AE1A21BC2A0065EBFD /* Delivery Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39EC45BD1A21BC2A0065EBFD /* Build configuration list for PBXNativeTarget "Delivery Watch App" */;
+			buildPhases = (
+				39EC45AD1A21BC2A0065EBFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Delivery Watch App";
+			productName = "Delivery Watch App";
+			productReference = 39EC45AF1A21BC2A0065EBFD /* Delivery Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +320,12 @@
 					39EC45881A21BB4F0065EBFD = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 39EC45731A21BB4F0065EBFD;
+					};
+					39EC459C1A21BC2A0065EBFD = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					39EC45AE1A21BC2A0065EBFD = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -183,6 +344,8 @@
 			targets = (
 				39EC45731A21BB4F0065EBFD /* Delivery */,
 				39EC45881A21BB4F0065EBFD /* DeliveryTests */,
+				39EC459C1A21BC2A0065EBFD /* Delivery WatchKit Extension */,
+				39EC45AE1A21BC2A0065EBFD /* Delivery Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +365,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39EC459B1A21BC2A0065EBFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39EC45AC1A21BC2A0065EBFD /* Images.xcassets in Resources */,
+				39EC45CA1A21D7500065EBFD /* icon_6996.png in Resources */,
+				39EC45B01A21BC2A0065EBFD /* Delivery Watch App.app in Resources */,
+				39DF60351A21D996004DF2C0 /* stackoverflow_logo.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39EC45AD1A21BC2A0065EBFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39EC45B71A21BC2A0065EBFD /* Interface.storyboard in Resources */,
+				39EC45B91A21BC2A0065EBFD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +408,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		39EC45991A21BC2A0065EBFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39EC45C81A21C60D0065EBFD /* Confirm.swift in Sources */,
+				39EC45A81A21BC2A0065EBFD /* NotificationController.swift in Sources */,
+				39EC45A61A21BC2A0065EBFD /* InterfaceController.swift in Sources */,
+				39EC45AA1A21BC2A0065EBFD /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +426,16 @@
 			isa = PBXTargetDependency;
 			target = 39EC45731A21BB4F0065EBFD /* Delivery */;
 			targetProxy = 39EC458A1A21BB4F0065EBFD /* PBXContainerItemProxy */;
+		};
+		39EC45B21A21BC2A0065EBFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39EC45AE1A21BC2A0065EBFD /* Delivery Watch App */;
+			targetProxy = 39EC45B11A21BC2A0065EBFD /* PBXContainerItemProxy */;
+		};
+		39EC45BB1A21BC2A0065EBFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39EC459C1A21BC2A0065EBFD /* Delivery WatchKit Extension */;
+			targetProxy = 39EC45BA1A21BC2A0065EBFD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -336,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Delivery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +551,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Delivery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,6 +592,69 @@
 			};
 			name = Release;
 		};
+		39EC45BE1A21BC2A0065EBFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Delivery_WatchKit_Extension;
+				INFOPLIST_FILE = "Delivery Watch App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Delivery WatchKit Extension/Delivery Watch App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		39EC45BF1A21BC2A0065EBFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				IBSC_MODULE = Delivery_WatchKit_Extension;
+				INFOPLIST_FILE = "Delivery Watch App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Delivery WatchKit Extension/Delivery Watch App-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		39EC45C11A21BC2A0065EBFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Delivery WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		39EC45C21A21BC2A0065EBFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Delivery WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -405,6 +674,7 @@
 				39EC45951A21BB4F0065EBFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39EC45961A21BB4F0065EBFD /* Build configuration list for PBXNativeTarget "DeliveryTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +683,25 @@
 				39EC45981A21BB4F0065EBFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39EC45BD1A21BC2A0065EBFD /* Build configuration list for PBXNativeTarget "Delivery Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39EC45BE1A21BC2A0065EBFD /* Debug */,
+				39EC45BF1A21BC2A0065EBFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39EC45C01A21BC2A0065EBFD /* Build configuration list for PBXNativeTarget "Delivery WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39EC45C11A21BC2A0065EBFD /* Debug */,
+				39EC45C21A21BC2A0065EBFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
