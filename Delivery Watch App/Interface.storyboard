@@ -76,7 +76,7 @@
                         </group>
                         <group width="1" height="0.33000000000000002" alignment="left" hasDetent="YES" id="JZg-O1-8uN">
                             <items>
-                                <label width="1" height="1" alignment="center" text="0" textAlignment="center" id="JKc-af-wQL">
+                                <label width="1" height="1" alignment="center" textAlignment="center" id="JKc-af-wQL">
                                     <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 </label>
                             </items>
@@ -84,6 +84,7 @@
                         <group width="1" height="0.41999999999999998" alignment="left" hasDetent="YES" id="sv9-r8-BUk">
                             <items>
                                 <button width="1" height="1" alignment="left" title="Place Order" id="qCJ-Rt-T0B">
+                                    <color key="backgroundColor" red="0.41361370079999998" green="0.62430950129999996" blue="0.32015186750000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
                                         <action selector="confirm_pressed" destination="HoU-LS-DZv" id="3XU-T3-SSG"/>
                                     </connections>

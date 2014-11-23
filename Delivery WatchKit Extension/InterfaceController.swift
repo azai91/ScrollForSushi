@@ -108,10 +108,10 @@ class InterfaceController: WKInterfaceController {
         price3 = 9
         price4 = 1
         
-        item_1.setBackgroundImage(UIImage(named: "Spicy-Tuna2.png"))
-        item_2.setBackgroundImage(UIImage(named: "SalmonRoll2.png"))
-        item_3.setBackgroundImage(UIImage(named: "California_Roll2.png"))
-        item_4.setBackgroundImage(UIImage(named: "RockNRoll2.png"))
+        item_1.setBackgroundImage(UIImage(named: "Spicy-Tuna.png"))
+        item_2.setBackgroundImage(UIImage(named: "SalmonRoll.png"))
+        item_3.setBackgroundImage(UIImage(named: "California_Roll.png"))
+        item_4.setBackgroundImage(UIImage(named: "RockNRoll.png"))
         
         defaults?.setBool(false, forKey: "reset")
         defaults?.synchronize()
@@ -127,7 +127,7 @@ class InterfaceController: WKInterfaceController {
         super.willActivate()
         NSLog("%@ will activate", self)
         
-        var shouldReset = NSUserDefaults.standardUserDefaults().boolForKey("reset")
+        var shouldReset = defaults?.boolForKey("reset")
         if (shouldReset != false) {
 
             count1 = 0

@@ -34,8 +34,8 @@ class Confirm: WKInterfaceController {
         confirm.setEnabled(false)
         
         
-        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "reset")
-        NSUserDefaults.standardUserDefaults().synchronize()
+        defaults?.setBool(true, forKey: "reset")
+        defaults?.synchronize()
         
     }
     
@@ -53,12 +53,13 @@ class Confirm: WKInterfaceController {
         super.willActivate()
         NSLog("%@ will activate", self)
         
-        var shouldReset:String? = NSUserDefaults.standardUserDefaults().objectForKey("reset") as? String
-        if (shouldReset != "false") {
+        var shouldReset = defaults?.boolForKey("reset")
+        
+        if (shouldReset != false) {
             
             
             confirm.setEnabled(true)
-            defaults?.setObject("false", forKey: "reset")
+            defaults?.setBool(false, forKey: "reset")
             defaults?.synchronize()
             
         }
