@@ -14,14 +14,19 @@ class Confirm: WKInterfaceController {
     
     
     @IBOutlet var price: WKInterfaceLabel!
-    
+    var count1 = "";
+    var count2 = "";
+    var count3 = "";
+    var count4 = "";
+    var total = "";
     
     @IBOutlet var confirm: WKInterfaceButton!
     
     @IBAction func confirm_pressed() {
         
-//        NSUserDefaults.standardUserDefaults().setObject(order, forKey: "order")
-//        NSUserDefaults.standardUserDefaults().synchronize()
+        var order = [count1,count2,count3,count4,total];
+        NSUserDefaults.standardUserDefaults().setObject(order, forKey: "order")
+        NSUserDefaults.standardUserDefaults().synchronize()
         
         confirm.setTitle("Order Place")
     }
@@ -38,13 +43,12 @@ class Confirm: WKInterfaceController {
         super.willActivate()
         NSLog("%@ will activate", self)
         
-        var total:Int? = NSUserDefaults.standardUserDefaults().objectForKey("total") as? Int
-        var count1:Int? = NSUserDefaults.standardUserDefaults().objectForKey("count1") as? Int
-        var count2:Int? = NSUserDefaults.standardUserDefaults().objectForKey("count1") as? Int
-        var count3:Int? = NSUserDefaults.standardUserDefaults().objectForKey("count1") as? Int
-        var count4:Int? = NSUserDefaults.standardUserDefaults().objectForKey("count1") as? Int
-        println(total)
-        price.setText(String(total))
+        var total:String? = NSUserDefaults.standardUserDefaults().objectForKey("total") as? String
+        var count1:String? = NSUserDefaults.standardUserDefaults().objectForKey("count1") as? String
+        var count2:String? = NSUserDefaults.standardUserDefaults().objectForKey("count2") as? String
+        var count3:String? = NSUserDefaults.standardUserDefaults().objectForKey("count3") as? String
+        var count4:String? = NSUserDefaults.standardUserDefaults().objectForKey("count4") as? String
+        price.setText(total)
         
 
     }

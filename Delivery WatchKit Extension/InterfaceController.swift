@@ -106,11 +106,11 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         NSLog("%@ did deactivate", self)
         
-        NSUserDefaults.standardUserDefaults().setObject(total, forKey: "total")
-        NSUserDefaults.standardUserDefaults().setObject(count1, forKey: "count1")
-        NSUserDefaults.standardUserDefaults().setObject(count2, forKey: "count2")
-        NSUserDefaults.standardUserDefaults().setObject(count3, forKey: "count3")
-        NSUserDefaults.standardUserDefaults().setObject(count4, forKey: "count4")
+        NSUserDefaults.standardUserDefaults().setObject(String(total), forKey: "total")
+        NSUserDefaults.standardUserDefaults().setObject(String(count1), forKey: "count1")
+        NSUserDefaults.standardUserDefaults().setObject(String(count2), forKey: "count2")
+        NSUserDefaults.standardUserDefaults().setObject(String(count3), forKey: "count3")
+        NSUserDefaults.standardUserDefaults().setObject(String(count4), forKey: "count4")
         NSUserDefaults.standardUserDefaults().synchronize()
         super.didDeactivate()
     }
