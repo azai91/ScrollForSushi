@@ -28,7 +28,8 @@ class Confirm: WKInterfaceController {
         NSUserDefaults.standardUserDefaults().setObject(order, forKey: "order")
         NSUserDefaults.standardUserDefaults().synchronize()
         
-        confirm.setTitle("Order Place")
+        confirm.setTitle("Order Placed")
+        confirm.setEnabled(false)
     }
     
     override init(context: AnyObject?) {

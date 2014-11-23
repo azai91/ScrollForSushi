@@ -86,6 +86,18 @@ class InterfaceController: WKInterfaceController {
         price3 = 9
         price4 = 1
         
+        item_1.setBackgroundImage(UIImage(named: "Spicy-Tuna.png"))
+        item_2.setBackgroundImage(UIImage(named: "Salmon_Roll.png"))
+        item_3.setBackgroundImage(UIImage(named: "California_Roll.png"))
+        item_4.setBackgroundImage(UIImage(named: "RockNRoll.png"))
+        
+        var attr = [NSFontAttributeName : UIFont.systemFontOfSize(30.0)]
+//        item_4.frame.origin = CGPoint(x: 10, y: 10)
+        item_1.setAttributedTitle(NSAttributedString(string: "0", attributes: attr))
+        item_2.setAttributedTitle(NSAttributedString(string: "0", attributes: attr))
+        item_3.setAttributedTitle(NSAttributedString(string: "0", attributes: attr))
+        item_4.setAttributedTitle(NSAttributedString(string: "0", attributes: attr))
+        
         // Configure interface objects here.
         NSLog("%@ init", self)
         

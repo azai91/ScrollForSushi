@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39DF60351A21D996004DF2C0 /* stackoverflow_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39DF60341A21D996004DF2C0 /* stackoverflow_logo.jpg */; };
+		391B1CAC1A21E5070043BB46 /* Sushi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 391B1CAB1A21E5070043BB46 /* Sushi.jpg */; };
+		395D2BAC1A2203DC006397A2 /* California_Roll.png in Resources */ = {isa = PBXBuildFile; fileRef = 395D2BAB1A2203DC006397A2 /* California_Roll.png */; };
+		395D2BAE1A2203E4006397A2 /* Salmon_Roll.png in Resources */ = {isa = PBXBuildFile; fileRef = 395D2BAD1A2203E4006397A2 /* Salmon_Roll.png */; };
+		395D2BB01A2203E8006397A2 /* Spicy-Tuna.png in Resources */ = {isa = PBXBuildFile; fileRef = 395D2BAF1A2203E8006397A2 /* Spicy-Tuna.png */; };
+		395D2BB21A2203EC006397A2 /* RockNRoll.png in Resources */ = {isa = PBXBuildFile; fileRef = 395D2BB11A2203EC006397A2 /* RockNRoll.png */; };
 		39EC457A1A21BB4F0065EBFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC45791A21BB4F0065EBFD /* AppDelegate.swift */; };
 		39EC457C1A21BB4F0065EBFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC457B1A21BB4F0065EBFD /* ViewController.swift */; };
 		39EC457F1A21BB4F0065EBFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39EC457D1A21BB4F0065EBFD /* Main.storyboard */; };
@@ -24,7 +28,6 @@
 		39EC45B91A21BC2A0065EBFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39EC45B81A21BC2A0065EBFD /* Images.xcassets */; };
 		39EC45BC1A21BC2A0065EBFD /* Delivery WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 39EC459D1A21BC2A0065EBFD /* Delivery WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		39EC45C81A21C60D0065EBFD /* Confirm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC45C71A21C60D0065EBFD /* Confirm.swift */; };
-		39EC45CA1A21D7500065EBFD /* icon_6996.png in Resources */ = {isa = PBXBuildFile; fileRef = 39EC45C91A21D7500065EBFD /* icon_6996.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +69,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		39DF60341A21D996004DF2C0 /* stackoverflow_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = stackoverflow_logo.jpg; path = ../../../stackoverflow_logo.jpg; sourceTree = "<group>"; };
+		391B1CAB1A21E5070043BB46 /* Sushi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Sushi.jpg; path = ../../../../Downloads/Sushi.jpg; sourceTree = "<group>"; };
+		395D2BAB1A2203DC006397A2 /* California_Roll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = California_Roll.png; sourceTree = "<group>"; };
+		395D2BAD1A2203E4006397A2 /* Salmon_Roll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salmon_Roll.png; sourceTree = "<group>"; };
+		395D2BAF1A2203E8006397A2 /* Spicy-Tuna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spicy-Tuna.png"; sourceTree = "<group>"; };
+		395D2BB11A2203EC006397A2 /* RockNRoll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RockNRoll.png; sourceTree = "<group>"; };
 		39EC45741A21BB4F0065EBFD /* Delivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Delivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39EC45781A21BB4F0065EBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39EC45791A21BB4F0065EBFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,7 +98,6 @@
 		39EC45B81A21BC2A0065EBFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		39EC45C41A21C4D70065EBFD /* Delivery Watch App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Delivery Watch App-Bridging-Header.h"; sourceTree = "<group>"; };
 		39EC45C71A21C60D0065EBFD /* Confirm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Confirm.swift; sourceTree = "<group>"; };
-		39EC45C91A21D7500065EBFD /* icon_6996.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_6996.png; path = ../../../../Downloads/icon_6996.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,9 +199,12 @@
 			isa = PBXGroup;
 			children = (
 				39EC45A51A21BC2A0065EBFD /* InterfaceController.swift */,
-				39EC45C91A21D7500065EBFD /* icon_6996.png */,
-				39DF60341A21D996004DF2C0 /* stackoverflow_logo.jpg */,
 				39EC45C71A21C60D0065EBFD /* Confirm.swift */,
+				395D2BB11A2203EC006397A2 /* RockNRoll.png */,
+				391B1CAB1A21E5070043BB46 /* Sushi.jpg */,
+				395D2BAF1A2203E8006397A2 /* Spicy-Tuna.png */,
+				395D2BAD1A2203E4006397A2 /* Salmon_Roll.png */,
+				395D2BAB1A2203DC006397A2 /* California_Roll.png */,
 				39EC45A71A21BC2A0065EBFD /* NotificationController.swift */,
 				39EC45A91A21BC2A0065EBFD /* GlanceController.swift */,
 				39EC45AB1A21BC2A0065EBFD /* Images.xcassets */,
@@ -372,10 +381,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395D2BAE1A2203E4006397A2 /* Salmon_Roll.png in Resources */,
 				39EC45AC1A21BC2A0065EBFD /* Images.xcassets in Resources */,
-				39EC45CA1A21D7500065EBFD /* icon_6996.png in Resources */,
+				391B1CAC1A21E5070043BB46 /* Sushi.jpg in Resources */,
 				39EC45B01A21BC2A0065EBFD /* Delivery Watch App.app in Resources */,
-				39DF60351A21D996004DF2C0 /* stackoverflow_logo.jpg in Resources */,
+				395D2BB01A2203E8006397A2 /* Spicy-Tuna.png in Resources */,
+				395D2BB21A2203EC006397A2 /* RockNRoll.png in Resources */,
+				395D2BAC1A2203DC006397A2 /* California_Roll.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
