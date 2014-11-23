@@ -11,17 +11,21 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
+    
+    
+    let defaults = NSUserDefaults(suiteName: "ScrollforSushi")
 
-    var total = 0
+    var total:Float = 0
+    
     var count1 = 0
     var count2 = 0
     var count3 = 0
     var count4 = 0
     
-    var price1 = 0
-    var price2 = 0
-    var price3 = 0
-    var price4 = 0
+    var price1:Float = 0
+    var price2:Float = 0
+    var price3:Float = 0
+    var price4:Float = 0
     
     @IBOutlet var price: WKInterfaceLabel!
     @IBOutlet var item_1: WKInterfaceButton!
@@ -109,8 +113,8 @@ class InterfaceController: WKInterfaceController {
         item_3.setBackgroundImage(UIImage(named: "California_Roll2.png"))
         item_4.setBackgroundImage(UIImage(named: "RockNRoll2.png"))
         
-        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "reset")
-        NSUserDefaults.standardUserDefaults().synchronize()
+        defaults?.setBool(false, forKey: "reset")
+        defaults?.synchronize()
         
         
         // Configure interface objects here.
@@ -149,12 +153,12 @@ class InterfaceController: WKInterfaceController {
         NSLog("%@ did deactivate", self)
         
 //        var order:[Int] = [count1, count2, count3, count4, total]
-        NSUserDefaults.standardUserDefaults().setInteger(total, forKey: "total")
-        NSUserDefaults.standardUserDefaults().setInteger(count1, forKey: "count1")
-        NSUserDefaults.standardUserDefaults().setInteger(count2, forKey: "count2")
-        NSUserDefaults.standardUserDefaults().setInteger(count3, forKey: "count3")
-        NSUserDefaults.standardUserDefaults().setInteger(count4, forKey: "count4")
-        NSUserDefaults.standardUserDefaults().synchronize()
+        defaults?.setFloat(total, forKey: "total")
+        defaults?.setInteger(count1, forKey: "count1")
+        defaults?.setInteger(count2, forKey: "count2")
+        defaults?.setInteger(count3, forKey: "count3")
+        defaults?.setInteger(count4, forKey: "count4")
+        defaults?.synchronize()
         super.didDeactivate()
     }
 

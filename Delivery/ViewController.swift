@@ -8,7 +8,14 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
+    
+    func lower() {
+        
+        println("hello")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

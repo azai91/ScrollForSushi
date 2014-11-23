@@ -9,9 +9,9 @@
 import WatchKit
 import Foundation
 
-
 class Confirm: WKInterfaceController {
     
+    let defaults = NSUserDefaults(suiteName: "ScrollforSushi")
     
     @IBOutlet var price: WKInterfaceLabel!
     var count1 = "";
@@ -25,11 +25,15 @@ class Confirm: WKInterfaceController {
     @IBAction func confirm_pressed() {
         
         var order = [count1,count2,count3,count4,total];
-        NSUserDefaults.standardUserDefaults().setObject(order, forKey: "order")
-        NSUserDefaults.standardUserDefaults().synchronize()
+        defaults?.setObject(order, forKey: "order")
+        defaults?.synchronize()
+        
+        println(defaults?.objectForKey("order"))
         
         confirm.setTitle("Order Placed")
         confirm.setEnabled(false)
+        
+        
         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "reset")
         NSUserDefaults.standardUserDefaults().synchronize()
         
@@ -54,17 +58,19 @@ class Confirm: WKInterfaceController {
             
             
             confirm.setEnabled(true)
-            NSUserDefaults.standardUserDefaults().setObject("false", forKey: "reset")
-            NSUserDefaults.standardUserDefaults().synchronize()
+            defaults?.setObject("false", forKey: "reset")
+            defaults?.synchronize()
             
         }
         
-        var total = NSUserDefaults.standardUserDefaults().integerForKey("total")
-        var count1 = NSUserDefaults.standardUserDefaults().integerForKey("count1")
-        var count2 = NSUserDefaults.standardUserDefaults().integerForKey("count2")
-        var count3 = NSUserDefaults.standardUserDefaults().integerForKey("count3")
-        var count4 = NSUserDefaults.standardUserDefaults().integerForKey("count4")
-        price.setText("$\(String(total))")
+        var total = defaults?.floatForKey("total")
+        var count1 = defaults?.integerForKey("count1")
+        var count2 = defaults?.integerForKey("count2")
+        var count3 = defaults?.integerForKey("count3")
+        var count4 = defaults?.integerForKey("count4")
+        
+        var formattedPrice = NSString(format: "%.02f", total!)
+        price.setText("$\(formattedPrice)")
         
         if (total == 0) {
             
