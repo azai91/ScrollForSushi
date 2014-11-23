@@ -30,12 +30,17 @@ class Confirm: WKInterfaceController {
         
         confirm.setTitle("Order Placed")
         confirm.setEnabled(false)
+        NSUserDefaults.standardUserDefaults().setObject("true", forKey: "reset")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        
     }
     
     override init(context: AnyObject?) {
         // Initialize variables here.
         super.init(context: context)
                 // Configure interface objects here.
+        
+//        price.font = UIFont(name: price.font.fontName, size: 40)
         NSLog("%@ init", self)
     }
     
@@ -44,12 +49,23 @@ class Confirm: WKInterfaceController {
         super.willActivate()
         NSLog("%@ will activate", self)
         
+        var shouldReset:String? = NSUserDefaults.standardUserDefaults().objectForKey("reset") as? String
+        if (shouldReset != "false") {
+            
+            
+            confirm.setEnabled(true)
+            NSUserDefaults.standardUserDefaults().setObject("false", forKey: "reset")
+            NSUserDefaults.standardUserDefaults().synchronize()
+            
+        }
+        
+        
         var total:String? = NSUserDefaults.standardUserDefaults().objectForKey("total") as? String
         var count1:String? = NSUserDefaults.standardUserDefaults().objectForKey("count1") as? String
         var count2:String? = NSUserDefaults.standardUserDefaults().objectForKey("count2") as? String
         var count3:String? = NSUserDefaults.standardUserDefaults().objectForKey("count3") as? String
         var count4:String? = NSUserDefaults.standardUserDefaults().objectForKey("count4") as? String
-        price.setText(total)
+        price.setText("$\(String(total!))")
         
 
     }

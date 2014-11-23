@@ -37,7 +37,7 @@ class InterfaceController: WKInterfaceController {
             count1 = 0
             total -= 6 * price1;
         }
-        item_1.setTitle(String(count1));
+        item_1.setTitle(String(count1))
         
     }
     
@@ -49,7 +49,7 @@ class InterfaceController: WKInterfaceController {
             count2 = 0
             total -= 6 * price2;
         }
-        item_2.setTitle(String(count2));
+        item_2.setTitle(String(count2))
         
     }
     
@@ -61,7 +61,7 @@ class InterfaceController: WKInterfaceController {
             count3 = 0
             total -= 6 * price3;
         }
-        item_3.setTitle(String(count3));
+        item_3.setTitle(String(count3))
         
     }
     
@@ -73,7 +73,7 @@ class InterfaceController: WKInterfaceController {
             count4 = 0
             total -= 6 * price4;
         }
-        item_4.setTitle(String(count4));
+        item_4.setTitle(String(count4))
         
     }
     
@@ -91,12 +91,9 @@ class InterfaceController: WKInterfaceController {
         item_3.setBackgroundImage(UIImage(named: "California_Roll.png"))
         item_4.setBackgroundImage(UIImage(named: "RockNRoll.png"))
         
-        var attr = [NSFontAttributeName : UIFont.systemFontOfSize(30.0)]
-//        item_4.frame.origin = CGPoint(x: 10, y: 10)
-        item_1.setAttributedTitle(NSAttributedString(string: "0", attributes: attr))
-        item_2.setAttributedTitle(NSAttributedString(string: "0", attributes: attr))
-        item_3.setAttributedTitle(NSAttributedString(string: "0", attributes: attr))
-        item_4.setAttributedTitle(NSAttributedString(string: "0", attributes: attr))
+        NSUserDefaults.standardUserDefaults().setObject(String("false"), forKey: "reset")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        
         
         // Configure interface objects here.
         NSLog("%@ init", self)
@@ -107,6 +104,22 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         NSLog("%@ will activate", self)
+        
+        var shouldReset:String? = NSUserDefaults.standardUserDefaults().objectForKey("reset") as? String
+        if (shouldReset != "false") {
+
+            count1 = 0
+            count2 = 0
+            count3 = 0
+            count4 = 0
+            total = 0
+            println("hi")
+            item_1.setTitle(String(count1))
+            item_2.setTitle(String(count2))
+            item_3.setTitle(String(count3))
+            item_4.setTitle(String(count4))
+
+        }
     }
     
     

@@ -12,10 +12,10 @@
                     <items>
                         <group width="1" height="0.5" alignment="left" hasDetent="YES" id="UA1-TN-w5d">
                             <items>
-                                <button width="0.5" height="1" alignment="left" title="0" backgroundImage="Sushi.jpg" id="LKO-ho-eXe">
+                                <button width="0.5" height="1" alignment="left" title="0" id="LKO-ho-eXe">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.2815796378" green="0.62430950129999996" blue="0.1045458886" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                    <fontDescription key="font" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                     <connections>
                                         <action selector="item_1_pressed" destination="AgC-eL-Hgc" id="YPa-tt-ai7"/>
                                     </connections>
@@ -23,6 +23,7 @@
                                 <button width="0.5" height="1" alignment="left" title="0" id="1XK-pZ-hwv">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.28157963781278694" green="0.6243095012626263" blue="0.1045458885923554" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                     <connections>
                                         <action selector="item_2_pressed" destination="AgC-eL-Hgc" id="Sb6-Cp-lGq"/>
                                     </connections>
@@ -34,6 +35,7 @@
                                 <button width="0.5" height="1" alignment="left" title="0" id="fXM-b0-uZh">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.2815796378" green="0.62430950129999996" blue="0.1045458886" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                     <connections>
                                         <action selector="item_3_pressed" destination="AgC-eL-Hgc" id="OxZ-VP-248"/>
                                     </connections>
@@ -41,6 +43,7 @@
                                 <button width="0.5" height="1" alignment="left" title="0" id="zHQ-Up-5yd">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.2815796378" green="0.62430950129999996" blue="0.1045458886" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
                                     <connections>
                                         <action selector="item_4_pressed" destination="AgC-eL-Hgc" id="De0-Nb-z2o"/>
                                     </connections>
@@ -64,13 +67,29 @@
             <objects>
                 <controller id="HoU-LS-DZv" customClass="Confirm" customModule="Delivery_WatchKit_Extension">
                     <items>
-                        <label width="1" height="45.5" alignment="left" text="Confirm Total Of: " textAlignment="center" id="ib8-g3-QQ3"/>
-                        <label width="1" height="40" alignment="center" text="0" textAlignment="center" lineHeight="2" id="JKc-af-wQL"/>
-                        <button width="1" height="56.5" alignment="left" title="Place Order" id="qCJ-Rt-T0B">
-                            <connections>
-                                <action selector="confirm_pressed" destination="HoU-LS-DZv" id="3XU-T3-SSG"/>
-                            </connections>
-                        </button>
+                        <group width="1" height="0.25" alignment="left" hasDetent="YES" id="OWb-7f-lOs">
+                            <items>
+                                <label width="1" height="1" alignment="left" text="Confirm Total Of: " textAlignment="center" id="ib8-g3-QQ3">
+                                    <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="0.33000000000000002" alignment="left" hasDetent="YES" id="JZg-O1-8uN">
+                            <items>
+                                <label width="1" height="1" alignment="center" text="0" textAlignment="center" id="JKc-af-wQL">
+                                    <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="0.41999999999999998" alignment="left" hasDetent="YES" id="sv9-r8-BUk">
+                            <items>
+                                <button width="1" height="1" alignment="left" title="Place Order" id="qCJ-Rt-T0B">
+                                    <connections>
+                                        <action selector="confirm_pressed" destination="HoU-LS-DZv" id="3XU-T3-SSG"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
                     <connections>
                         <outlet property="confirm" destination="qCJ-Rt-T0B" id="Tbf-y6-dxa"/>
@@ -78,7 +97,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="450" y="343"/>
+            <point key="canvasLocation" x="452" y="347"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
