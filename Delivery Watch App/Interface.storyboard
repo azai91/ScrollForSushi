@@ -12,18 +12,18 @@
                     <items>
                         <group width="1" height="0.5" alignment="left" hasDetent="YES" id="UA1-TN-w5d">
                             <items>
-                                <button width="0.5" height="1" alignment="left" title="0" id="LKO-ho-eXe">
+                                <button width="0.5" height="1" alignment="left" id="LKO-ho-eXe">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.2815796378" green="0.62430950129999996" blue="0.1045458886" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="font" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
+                                    <fontDescription key="font" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="33"/>
                                     <connections>
                                         <action selector="item_1_pressed" destination="AgC-eL-Hgc" id="YPa-tt-ai7"/>
                                     </connections>
                                 </button>
-                                <button width="0.5" height="1" alignment="left" title="0" id="1XK-pZ-hwv">
+                                <button width="0.5" height="1" alignment="left" id="1XK-pZ-hwv">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.28157963781278694" green="0.6243095012626263" blue="0.1045458885923554" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="font" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
+                                    <fontDescription key="font" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="33"/>
                                     <connections>
                                         <action selector="item_2_pressed" destination="AgC-eL-Hgc" id="Sb6-Cp-lGq"/>
                                     </connections>
@@ -32,18 +32,18 @@
                         </group>
                         <group width="1" height="0.5" alignment="left" hasDetent="YES" id="S5c-2P-52s">
                             <items>
-                                <button width="0.5" height="1" alignment="left" title="0" id="fXM-b0-uZh">
+                                <button width="0.5" height="1" alignment="left" id="fXM-b0-uZh">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.2815796378" green="0.62430950129999996" blue="0.1045458886" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="font" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
+                                    <fontDescription key="font" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="33"/>
                                     <connections>
                                         <action selector="item_3_pressed" destination="AgC-eL-Hgc" id="OxZ-VP-248"/>
                                     </connections>
                                 </button>
-                                <button width="0.5" height="1" alignment="left" title="0" id="zHQ-Up-5yd">
+                                <button width="0.5" height="1" alignment="left" id="zHQ-Up-5yd">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.2815796378" green="0.62430950129999996" blue="0.1045458886" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="font" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="40"/>
+                                    <fontDescription key="font" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="33"/>
                                     <connections>
                                         <action selector="item_4_pressed" destination="AgC-eL-Hgc" id="De0-Nb-z2o"/>
                                     </connections>

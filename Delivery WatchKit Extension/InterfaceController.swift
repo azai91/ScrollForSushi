@@ -37,7 +37,11 @@ class InterfaceController: WKInterfaceController {
             count1 = 0
             total -= 6 * price1;
         }
-        item_1.setTitle(String(count1))
+        if count1 == 0 {
+            item_1.setTitle("")
+        } else {
+            item_1.setTitle(String(count1))
+        }
         
     }
     
@@ -49,7 +53,11 @@ class InterfaceController: WKInterfaceController {
             count2 = 0
             total -= 6 * price2;
         }
-        item_2.setTitle(String(count2))
+        if count2 == 0 {
+            item_2.setTitle("")
+        } else {
+            item_2.setTitle(String(count2))
+        }
         
     }
     
@@ -61,7 +69,11 @@ class InterfaceController: WKInterfaceController {
             count3 = 0
             total -= 6 * price3;
         }
-        item_3.setTitle(String(count3))
+        if count3 == 0 {
+            item_3.setTitle("")
+        } else {
+            item_3.setTitle(String(count3))
+        }
         
     }
     
@@ -73,7 +85,13 @@ class InterfaceController: WKInterfaceController {
             count4 = 0
             total -= 6 * price4;
         }
-        item_4.setTitle(String(count4))
+        
+        if count4 == 0 {
+            item_4.setTitle("")
+        } else {
+            item_4.setTitle(String(count4))
+        }
+        
         
     }
     
@@ -114,10 +132,10 @@ class InterfaceController: WKInterfaceController {
             count4 = 0
             total = 0
             println("hi")
-            item_1.setTitle(String(count1))
-            item_2.setTitle(String(count2))
-            item_3.setTitle(String(count3))
-            item_4.setTitle(String(count4))
+            item_1.setTitle("")
+            item_2.setTitle("")
+            item_3.setTitle("")
+            item_4.setTitle("")
 
         }
     }
