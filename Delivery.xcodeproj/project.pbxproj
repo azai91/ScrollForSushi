@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		391B1CAC1A21E5070043BB46 /* Sushi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 391B1CAB1A21E5070043BB46 /* Sushi.jpg */; };
+		3930B55B1A227CBF0033D0B5 /* RockNRoll2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3930B55A1A227CBF0033D0B5 /* RockNRoll2.png */; };
+		3930B55D1A227CC30033D0B5 /* SalmonRoll2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3930B55C1A227CC30033D0B5 /* SalmonRoll2.png */; };
+		3930B55F1A227CC60033D0B5 /* Spicy-Tuna2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3930B55E1A227CC60033D0B5 /* Spicy-Tuna2.png */; };
+		3930B5611A227CC90033D0B5 /* California_Roll2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3930B5601A227CC90033D0B5 /* California_Roll2.png */; };
 		395D2BAC1A2203DC006397A2 /* California_Roll.png in Resources */ = {isa = PBXBuildFile; fileRef = 395D2BAB1A2203DC006397A2 /* California_Roll.png */; };
 		395D2BAE1A2203E4006397A2 /* Salmon_Roll.png in Resources */ = {isa = PBXBuildFile; fileRef = 395D2BAD1A2203E4006397A2 /* Salmon_Roll.png */; };
 		395D2BB01A2203E8006397A2 /* Spicy-Tuna.png in Resources */ = {isa = PBXBuildFile; fileRef = 395D2BAF1A2203E8006397A2 /* Spicy-Tuna.png */; };
@@ -70,6 +74,10 @@
 
 /* Begin PBXFileReference section */
 		391B1CAB1A21E5070043BB46 /* Sushi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Sushi.jpg; path = ../../../../Downloads/Sushi.jpg; sourceTree = "<group>"; };
+		3930B55A1A227CBF0033D0B5 /* RockNRoll2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RockNRoll2.png; sourceTree = "<group>"; };
+		3930B55C1A227CC30033D0B5 /* SalmonRoll2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SalmonRoll2.png; sourceTree = "<group>"; };
+		3930B55E1A227CC60033D0B5 /* Spicy-Tuna2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spicy-Tuna2.png"; sourceTree = "<group>"; };
+		3930B5601A227CC90033D0B5 /* California_Roll2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = California_Roll2.png; sourceTree = "<group>"; };
 		395D2BAB1A2203DC006397A2 /* California_Roll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = California_Roll.png; sourceTree = "<group>"; };
 		395D2BAD1A2203E4006397A2 /* Salmon_Roll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Salmon_Roll.png; sourceTree = "<group>"; };
 		395D2BAF1A2203E8006397A2 /* Spicy-Tuna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spicy-Tuna.png"; sourceTree = "<group>"; };
@@ -203,7 +211,11 @@
 				395D2BB11A2203EC006397A2 /* RockNRoll.png */,
 				391B1CAB1A21E5070043BB46 /* Sushi.jpg */,
 				395D2BAF1A2203E8006397A2 /* Spicy-Tuna.png */,
+				3930B55E1A227CC60033D0B5 /* Spicy-Tuna2.png */,
 				395D2BAD1A2203E4006397A2 /* Salmon_Roll.png */,
+				3930B55A1A227CBF0033D0B5 /* RockNRoll2.png */,
+				3930B5601A227CC90033D0B5 /* California_Roll2.png */,
+				3930B55C1A227CC30033D0B5 /* SalmonRoll2.png */,
 				395D2BAB1A2203DC006397A2 /* California_Roll.png */,
 				39EC45A71A21BC2A0065EBFD /* NotificationController.swift */,
 				39EC45A91A21BC2A0065EBFD /* GlanceController.swift */,
@@ -381,9 +393,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3930B55D1A227CC30033D0B5 /* SalmonRoll2.png in Resources */,
 				395D2BAE1A2203E4006397A2 /* Salmon_Roll.png in Resources */,
+				3930B55B1A227CBF0033D0B5 /* RockNRoll2.png in Resources */,
+				3930B5611A227CC90033D0B5 /* California_Roll2.png in Resources */,
 				39EC45AC1A21BC2A0065EBFD /* Images.xcassets in Resources */,
 				391B1CAC1A21E5070043BB46 /* Sushi.jpg in Resources */,
+				3930B55F1A227CC60033D0B5 /* Spicy-Tuna2.png in Resources */,
 				39EC45B01A21BC2A0065EBFD /* Delivery Watch App.app in Resources */,
 				395D2BB01A2203E8006397A2 /* Spicy-Tuna.png in Resources */,
 				395D2BB21A2203EC006397A2 /* RockNRoll.png in Resources */,

@@ -30,7 +30,7 @@ class Confirm: WKInterfaceController {
         
         confirm.setTitle("Order Placed")
         confirm.setEnabled(false)
-        NSUserDefaults.standardUserDefaults().setObject("true", forKey: "reset")
+        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "reset")
         NSUserDefaults.standardUserDefaults().synchronize()
         
     }
@@ -59,13 +59,22 @@ class Confirm: WKInterfaceController {
             
         }
         
+        var total = NSUserDefaults.standardUserDefaults().integerForKey("total")
+        var count1 = NSUserDefaults.standardUserDefaults().integerForKey("count1")
+        var count2 = NSUserDefaults.standardUserDefaults().integerForKey("count2")
+        var count3 = NSUserDefaults.standardUserDefaults().integerForKey("count3")
+        var count4 = NSUserDefaults.standardUserDefaults().integerForKey("count4")
+        price.setText("$\(String(total))")
         
-        var total:String? = NSUserDefaults.standardUserDefaults().objectForKey("total") as? String
-        var count1:String? = NSUserDefaults.standardUserDefaults().objectForKey("count1") as? String
-        var count2:String? = NSUserDefaults.standardUserDefaults().objectForKey("count2") as? String
-        var count3:String? = NSUserDefaults.standardUserDefaults().objectForKey("count3") as? String
-        var count4:String? = NSUserDefaults.standardUserDefaults().objectForKey("count4") as? String
-        price.setText("$\(String(total!))")
+        if (total == 0) {
+            
+            confirm.setEnabled(false)
+            
+        } else {
+            
+            confirm.setEnabled(true)
+            
+        }
         
 
     }

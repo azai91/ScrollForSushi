@@ -104,12 +104,12 @@ class InterfaceController: WKInterfaceController {
         price3 = 9
         price4 = 1
         
-        item_1.setBackgroundImage(UIImage(named: "Spicy-Tuna.png"))
-        item_2.setBackgroundImage(UIImage(named: "Salmon_Roll.png"))
-        item_3.setBackgroundImage(UIImage(named: "California_Roll.png"))
-        item_4.setBackgroundImage(UIImage(named: "RockNRoll.png"))
+        item_1.setBackgroundImage(UIImage(named: "Spicy-Tuna2.png"))
+        item_2.setBackgroundImage(UIImage(named: "SalmonRoll2.png"))
+        item_3.setBackgroundImage(UIImage(named: "California_Roll2.png"))
+        item_4.setBackgroundImage(UIImage(named: "RockNRoll2.png"))
         
-        NSUserDefaults.standardUserDefaults().setObject(String("false"), forKey: "reset")
+        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "reset")
         NSUserDefaults.standardUserDefaults().synchronize()
         
         
@@ -123,15 +123,14 @@ class InterfaceController: WKInterfaceController {
         super.willActivate()
         NSLog("%@ will activate", self)
         
-        var shouldReset:String? = NSUserDefaults.standardUserDefaults().objectForKey("reset") as? String
-        if (shouldReset != "false") {
+        var shouldReset = NSUserDefaults.standardUserDefaults().boolForKey("reset")
+        if (shouldReset != false) {
 
             count1 = 0
             count2 = 0
             count3 = 0
             count4 = 0
             total = 0
-            println("hi")
             item_1.setTitle("")
             item_2.setTitle("")
             item_3.setTitle("")
@@ -149,11 +148,12 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         NSLog("%@ did deactivate", self)
         
-        NSUserDefaults.standardUserDefaults().setObject(String(total), forKey: "total")
-        NSUserDefaults.standardUserDefaults().setObject(String(count1), forKey: "count1")
-        NSUserDefaults.standardUserDefaults().setObject(String(count2), forKey: "count2")
-        NSUserDefaults.standardUserDefaults().setObject(String(count3), forKey: "count3")
-        NSUserDefaults.standardUserDefaults().setObject(String(count4), forKey: "count4")
+//        var order:[Int] = [count1, count2, count3, count4, total]
+        NSUserDefaults.standardUserDefaults().setInteger(total, forKey: "total")
+        NSUserDefaults.standardUserDefaults().setInteger(count1, forKey: "count1")
+        NSUserDefaults.standardUserDefaults().setInteger(count2, forKey: "count2")
+        NSUserDefaults.standardUserDefaults().setInteger(count3, forKey: "count3")
+        NSUserDefaults.standardUserDefaults().setInteger(count4, forKey: "count4")
         NSUserDefaults.standardUserDefaults().synchronize()
         super.didDeactivate()
     }
