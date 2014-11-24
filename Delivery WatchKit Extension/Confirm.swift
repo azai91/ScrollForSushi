@@ -11,7 +11,7 @@ import Foundation
 
 class Confirm: WKInterfaceController {
     
-    let defaults = NSUserDefaults(suiteName: "ScrollforSushi")
+    let defaults = NSUserDefaults(suiteName: "scrollforsushi")
     
     @IBOutlet var price: WKInterfaceLabel!
     var count1 = "";

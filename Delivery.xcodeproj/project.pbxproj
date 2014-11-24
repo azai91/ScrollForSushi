@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		392B62CC1A2299A2006B9F06 /* California_Roll.png in Resources */ = {isa = PBXBuildFile; fileRef = 392B62CB1A2299A2006B9F06 /* California_Roll.png */; };
 		3930B55B1A227CBF0033D0B5 /* RockNRoll.png in Resources */ = {isa = PBXBuildFile; fileRef = 3930B55A1A227CBF0033D0B5 /* RockNRoll.png */; };
 		3930B55D1A227CC30033D0B5 /* SalmonRoll.png in Resources */ = {isa = PBXBuildFile; fileRef = 3930B55C1A227CC30033D0B5 /* SalmonRoll.png */; };
 		3930B55F1A227CC60033D0B5 /* Spicy-Tuna.png in Resources */ = {isa = PBXBuildFile; fileRef = 3930B55E1A227CC60033D0B5 /* Spicy-Tuna.png */; };
-		39EC457A1A21BB4F0065EBFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC45791A21BB4F0065EBFD /* AppDelegate.swift */; };
-		39EC457C1A21BB4F0065EBFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC457B1A21BB4F0065EBFD /* ViewController.swift */; };
-		39EC457F1A21BB4F0065EBFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39EC457D1A21BB4F0065EBFD /* Main.storyboard */; };
+		39A875B21A22AF02009C4EA9 /* Delivery WatchKit Extension.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 39A875B11A22AF02009C4EA9 /* Delivery WatchKit Extension.entitlements */; };
+		39A875B31A22AF02009C4EA9 /* Delivery WatchKit Extension.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 39A875B11A22AF02009C4EA9 /* Delivery WatchKit Extension.entitlements */; };
+		39A875B41A22AF02009C4EA9 /* Delivery WatchKit Extension.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 39A875B11A22AF02009C4EA9 /* Delivery WatchKit Extension.entitlements */; };
+		39A875B51A22AF02009C4EA9 /* Delivery WatchKit Extension.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 39A875B11A22AF02009C4EA9 /* Delivery WatchKit Extension.entitlements */; };
+		39A875B71A22AF34009C4EA9 /* Delivery.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 39A875B61A22AF34009C4EA9 /* Delivery.entitlements */; };
+		39A875B81A22AF34009C4EA9 /* Delivery.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 39A875B61A22AF34009C4EA9 /* Delivery.entitlements */; };
+		39A875B91A22AF34009C4EA9 /* Delivery.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 39A875B61A22AF34009C4EA9 /* Delivery.entitlements */; };
+		39A875BA1A22AF34009C4EA9 /* Delivery.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 39A875B61A22AF34009C4EA9 /* Delivery.entitlements */; };
+		39E8D1711A22A2BA001F14B0 /* California_Roll.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E8D1701A22A2BA001F14B0 /* California_Roll.png */; };
 		39EC45811A21BB4F0065EBFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39EC45801A21BB4F0065EBFD /* Images.xcassets */; };
 		39EC45841A21BB4F0065EBFD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39EC45821A21BB4F0065EBFD /* LaunchScreen.xib */; };
 		39EC45901A21BB4F0065EBFD /* DeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC458F1A21BB4F0065EBFD /* DeliveryTests.swift */; };
@@ -27,6 +32,10 @@
 		39EC45B91A21BC2A0065EBFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39EC45B81A21BC2A0065EBFD /* Images.xcassets */; };
 		39EC45BC1A21BC2A0065EBFD /* Delivery WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 39EC459D1A21BC2A0065EBFD /* Delivery WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		39EC45C81A21C60D0065EBFD /* Confirm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC45C71A21C60D0065EBFD /* Confirm.swift */; };
+		39F1DD441A229FF300DC8618 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F1DD401A229FF300DC8618 /* AppDelegate.swift */; };
+		39F1DD451A229FF300DC8618 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F1DD411A229FF300DC8618 /* HomeViewController.swift */; };
+		39F1DD461A229FF300DC8618 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F1DD421A229FF300DC8618 /* User.swift */; };
+		39F1DD471A229FF300DC8618 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F1DD431A229FF300DC8618 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,15 +77,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		392B62CB1A2299A2006B9F06 /* California_Roll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = California_Roll.png; sourceTree = "<group>"; };
+		392CC9D01A22A0D9008BE235 /* Delivery-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Delivery-Bridging-Header.h"; sourceTree = "<group>"; };
 		3930B55A1A227CBF0033D0B5 /* RockNRoll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RockNRoll.png; sourceTree = "<group>"; };
 		3930B55C1A227CC30033D0B5 /* SalmonRoll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SalmonRoll.png; sourceTree = "<group>"; };
 		3930B55E1A227CC60033D0B5 /* Spicy-Tuna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spicy-Tuna.png"; sourceTree = "<group>"; };
+		39A875B11A22AF02009C4EA9 /* Delivery WatchKit Extension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Delivery WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		39A875B61A22AF34009C4EA9 /* Delivery.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Delivery.entitlements; sourceTree = "<group>"; };
+		39E8D1701A22A2BA001F14B0 /* California_Roll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = California_Roll.png; sourceTree = "<group>"; };
 		39EC45741A21BB4F0065EBFD /* Delivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Delivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39EC45781A21BB4F0065EBFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		39EC45791A21BB4F0065EBFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		39EC457B1A21BB4F0065EBFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		39EC457E1A21BB4F0065EBFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39EC45801A21BB4F0065EBFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		39EC45831A21BB4F0065EBFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		39EC45891A21BB4F0065EBFD /* DeliveryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliveryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +105,10 @@
 		39EC45B81A21BC2A0065EBFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		39EC45C41A21C4D70065EBFD /* Delivery Watch App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Delivery Watch App-Bridging-Header.h"; sourceTree = "<group>"; };
 		39EC45C71A21C60D0065EBFD /* Confirm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Confirm.swift; sourceTree = "<group>"; };
+		39F1DD401A229FF300DC8618 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39F1DD411A229FF300DC8618 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		39F1DD421A229FF300DC8618 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		39F1DD431A229FF300DC8618 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,9 +163,12 @@
 		39EC45761A21BB4F0065EBFD /* Delivery */ = {
 			isa = PBXGroup;
 			children = (
-				39EC45791A21BB4F0065EBFD /* AppDelegate.swift */,
-				39EC457B1A21BB4F0065EBFD /* ViewController.swift */,
-				39EC457D1A21BB4F0065EBFD /* Main.storyboard */,
+				39F1DD401A229FF300DC8618 /* AppDelegate.swift */,
+				39A875B61A22AF34009C4EA9 /* Delivery.entitlements */,
+				39F1DD411A229FF300DC8618 /* HomeViewController.swift */,
+				39F1DD421A229FF300DC8618 /* User.swift */,
+				392CC9D01A22A0D9008BE235 /* Delivery-Bridging-Header.h */,
+				39F1DD431A229FF300DC8618 /* ViewController.swift */,
 				39EC45801A21BB4F0065EBFD /* Images.xcassets */,
 				39EC45821A21BB4F0065EBFD /* LaunchScreen.xib */,
 				39EC45771A21BB4F0065EBFD /* Supporting Files */,
@@ -200,10 +216,11 @@
 				39EC45C71A21C60D0065EBFD /* Confirm.swift */,
 				3930B55E1A227CC60033D0B5 /* Spicy-Tuna.png */,
 				3930B55A1A227CBF0033D0B5 /* RockNRoll.png */,
+				39A875B11A22AF02009C4EA9 /* Delivery WatchKit Extension.entitlements */,
 				3930B55C1A227CC30033D0B5 /* SalmonRoll.png */,
+				39E8D1701A22A2BA001F14B0 /* California_Roll.png */,
 				39EC45A71A21BC2A0065EBFD /* NotificationController.swift */,
 				39EC45A91A21BC2A0065EBFD /* GlanceController.swift */,
-				392B62CB1A2299A2006B9F06 /* California_Roll.png */,
 				39EC45AB1A21BC2A0065EBFD /* Images.xcassets */,
 				39EC45A21A21BC2A0065EBFD /* Supporting Files */,
 				39EC45C41A21C4D70065EBFD /* Delivery Watch App-Bridging-Header.h */,
@@ -361,9 +378,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39EC457F1A21BB4F0065EBFD /* Main.storyboard in Resources */,
 				39EC45841A21BB4F0065EBFD /* LaunchScreen.xib in Resources */,
+				39A875B71A22AF34009C4EA9 /* Delivery.entitlements in Resources */,
 				39EC45811A21BB4F0065EBFD /* Images.xcassets in Resources */,
+				39A875B21A22AF02009C4EA9 /* Delivery WatchKit Extension.entitlements in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +389,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A875B31A22AF02009C4EA9 /* Delivery WatchKit Extension.entitlements in Resources */,
+				39A875B81A22AF34009C4EA9 /* Delivery.entitlements in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,11 +399,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3930B55D1A227CC30033D0B5 /* SalmonRoll.png in Resources */,
+				39A875B91A22AF34009C4EA9 /* Delivery.entitlements in Resources */,
 				3930B55B1A227CBF0033D0B5 /* RockNRoll.png in Resources */,
 				39EC45AC1A21BC2A0065EBFD /* Images.xcassets in Resources */,
 				3930B55F1A227CC60033D0B5 /* Spicy-Tuna.png in Resources */,
 				39EC45B01A21BC2A0065EBFD /* Delivery Watch App.app in Resources */,
-				392B62CC1A2299A2006B9F06 /* California_Roll.png in Resources */,
+				39A875B41A22AF02009C4EA9 /* Delivery WatchKit Extension.entitlements in Resources */,
+				39E8D1711A22A2BA001F14B0 /* California_Roll.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,7 +414,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				39EC45B71A21BC2A0065EBFD /* Interface.storyboard in Resources */,
+				39A875BA1A22AF34009C4EA9 /* Delivery.entitlements in Resources */,
 				39EC45B91A21BC2A0065EBFD /* Images.xcassets in Resources */,
+				39A875B51A22AF02009C4EA9 /* Delivery WatchKit Extension.entitlements in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,8 +427,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39EC457C1A21BB4F0065EBFD /* ViewController.swift in Sources */,
-				39EC457A1A21BB4F0065EBFD /* AppDelegate.swift in Sources */,
+				39F1DD441A229FF300DC8618 /* AppDelegate.swift in Sources */,
+				39F1DD451A229FF300DC8618 /* HomeViewController.swift in Sources */,
+				39F1DD471A229FF300DC8618 /* ViewController.swift in Sources */,
+				39F1DD461A229FF300DC8618 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,14 +474,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		39EC457D1A21BB4F0065EBFD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				39EC457E1A21BB4F0065EBFD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		39EC45821A21BB4F0065EBFD /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -548,10 +566,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Delivery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Delivery/Delivery-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -559,10 +580,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Delivery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Delivery/Delivery-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -13,7 +13,7 @@ import Foundation
 class InterfaceController: WKInterfaceController {
     
     
-    let defaults = NSUserDefaults(suiteName: "ScrollforSushi")
+    let defaults = NSUserDefaults(suiteName: "scrollforsushi")
 
     var total:Float = 0
     
@@ -103,6 +103,9 @@ class InterfaceController: WKInterfaceController {
         // Initialize variables here.
         super.init(context: context)
         
+        var test = defaults?.objectForKey("foodArray")
+//        ["Spicy Tuna Roll"]
+        println(test)
         price1 = 5
         price2 = 7
         price3 = 9
